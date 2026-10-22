@@ -1,11 +1,11 @@
-# <img src="assets/overpass_dashboard.png" width="48" height="48" style="vertical-align: middle; border-radius: 10px;" /> Overpass for Mac
+# <img src="assets/overpass_dashboard.png" width="48" height="48" style="vertical-align: middle; border-radius: 10px;" /> Macplay
 
 > **The Free, Premium Windows Gaming & Compatibility Suite for macOS Apple Silicon (M1–M4)**  
 > *A high-performance, unified, zero-cost alternative to CrossOver and Parallels Desktop.*
 
 <p align="center">
-  <a href="https://github.com/Akshat-lab886/Overpass/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Overpass%20v1.0.0%20(.dmg)-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Overpass DMG" />
+  <a href="https://github.com/Akshat-lab886/Macplay/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Macplay%20v1.0.0%20(.dmg)-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Macplay DMG" />
   </a>
 </p>
 
@@ -22,20 +22,20 @@
 ## 📸 The Interface
 
 <p align="center">
-  <img src="assets/overpass_dashboard.png" alt="Overpass macOS Dashboard" width="100%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.6);" />
+  <img src="assets/overpass_dashboard.png" alt="Macplay macOS Dashboard" width="100%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.6);" />
 </p>
 
 ---
 
-## ⚡ What is Overpass?
+## ⚡ What is Macplay?
 
-**Overpass** bridges the gap between Windows PC games and macOS on Apple Silicon without requiring expensive ongoing subscriptions ($70+/year for CrossOver or $100+/year for Parallels). 
+**Macplay** bridges the gap between Windows PC games and macOS on Apple Silicon without requiring expensive ongoing subscriptions ($70+/year for CrossOver or $100+/year for Parallels). 
 
-Engineered natively in Swift and Metal for macOS Sequoia, Overpass combines the low-overhead speed of **Wine translation** (translating Windows x86_64 DirectX calls directly to Apple Metal 3) with **Apple Native Virtualization** (`Virtualization.framework`) for full Windows 11 ARM64 environments.
+Engineered natively in Swift and Metal for macOS Sequoia, Macplay combines the low-overhead speed of **Wine translation** (translating Windows x86_64 DirectX calls directly to Apple Metal 3) with **Apple Native Virtualization** (`Virtualization.framework`) for full Windows 11 ARM64 environments.
 
 ```
        ┌────────────────────────────────────────────────────────┐
-       │                   Overpass for macOS                   │
+       │                   Macplay for macOS                    │
        └──────────────────────────┬─────────────────────────────┘
                                   │
          ┌────────────────────────┴────────────────────────┐
@@ -85,7 +85,7 @@ Out-of-the-box profiles tuned for popular PC titles:
 - VirtIO networking, accelerated storage, and shared host directories.
 
 ### 🚀 Standalone macOS `.app` Generator
-Convert any Windows `.exe` into a native macOS application bundle in `~/Applications/Overpass/`. Launch games straight from Spotlight (`⌘ Space`), Launchpad, or the macOS Dock with custom Retina icons.
+Convert any Windows `.exe` into a native macOS application bundle in `~/Applications/Macplay/`. Launch games straight from Spotlight (`⌘ Space`), Launchpad, or the macOS Dock with custom Retina icons.
 
 ---
 
@@ -93,19 +93,19 @@ Convert any Windows `.exe` into a native macOS application bundle in `~/Applicat
 
 ### 1. Download the Installer
 Download the latest disk image from GitHub Releases or from this repository:
-- **[Download Overpass-1.0.0.dmg](https://github.com/Akshat-lab886/Overpass/releases/download/v1.0.0/Overpass-1.0.0.dmg)** *(Direct Download, 5.5 MB)*
-- Or download directly from the repository root: [`Overpass-1.0.0.dmg`](Overpass-1.0.0.dmg)
+- **[Download Macplay-1.0.0.dmg](https://github.com/Akshat-lab886/Macplay/releases/download/v1.0.0/Macplay-1.0.0.dmg)** *(Direct Download, 5.6 MB)*
+- Or download directly from the repository root: [`Macplay-1.0.0.dmg`](Macplay-1.0.0.dmg)
 
 ### 2. Install to Applications
-1. Open the downloaded `Overpass-1.0.0.dmg`.
-2. Drag **Overpass.app** into the **Applications** shortcut.
-3. Launch **Overpass** from Launchpad or `/Applications`.
+1. Open the downloaded `Macplay-1.0.0.dmg`.
+2. Drag **Macplay.app** into the **Applications** shortcut.
+3. Launch **Macplay** from Launchpad or `/Applications`.
 
 ```
 +-------------------------------------------------------+
-|  Overpass Installer                                   |
+|  Macplay Installer                                    |
 |                                                       |
-|    [ Overpass.app ]  ---------->  [ Applications ]    |
+|    [ Macplay.app ]  ---------->  [ Applications ]     |
 |                                                       |
 +-------------------------------------------------------+
 ```
@@ -121,39 +121,39 @@ Download the latest disk image from GitHub Releases or from this repository:
 | **Processor** | Apple Silicon M1 (8-core) | M2, M3, or M4 (Pro / Max / Ultra) |
 | **Operating System** | macOS Sonoma 14.0+ | macOS Sequoia 15.0+ |
 | **Unified Memory** | 8 GB RAM | 16 GB+ for AAA gaming |
-| **Storage** | 300 MB for Overpass app | SSD storage for game installs |
+| **Storage** | 300 MB for Macplay app | SSD storage for game installs |
 | **Architecture** | Apple Silicon ARM64 | Apple Silicon ARM64 |
 
 ---
 
-## 🛠️ Command-Line Utility (`overpass`)
+## 🛠️ Command-Line Utility (`macplay`)
 
-Overpass includes a fast command-line interface for scripting and terminal management:
+Macplay includes a fast command-line interface for scripting and terminal management:
 
 ```bash
 # Check system environment, Rosetta 2, and Metal status
-overpass status
+macplay status
 
 # List all bottles
-overpass bottle list
+macplay bottle list
 
 # Run any Windows executable in a specific bottle
-overpass run "Gaming" "C:\Games\Cyberpunk 2077\bin\x64\Cyberpunk2077.exe"
+macplay run "Gaming" "C:\Games\Cyberpunk 2077\bin\x64\Cyberpunk2077.exe"
 
 # Install essential stores or runtime components
-overpass store install steam
-overpass component install dxvk
+macplay store install steam
+macplay component install dxvk
 ```
 
 ---
 
 ## 🔒 Distribution & Licensing Notice
 
-- **Overpass Application:** Distributed as free-to-use compiled freeware binary for macOS. The source code of Overpass UI and management orchestration is private and proprietary.
-- **Third-Party Compatibility Runtimes:** Overpass orchestrates open-source runtime components including Wine (LGPL), DXVK (zlib/libpng), and MoltenVK (Apache 2.0). All third-party software remains subject to their respective upstream licenses.
+- **Macplay Application:** Distributed as free-to-use compiled freeware binary for macOS. The source code of Macplay UI and management orchestration is private and proprietary.
+- **Third-Party Compatibility Runtimes:** Macplay orchestrates open-source runtime components including Wine (LGPL), DXVK (zlib/libpng), and MoltenVK (Apache 2.0). All third-party software remains subject to their respective upstream licenses.
 
 ---
 
 <p align="center">
-  <sub>Overpass — Built with passion for Apple Silicon gaming.</sub>
+  <sub>Macplay — Built with passion for Apple Silicon gaming.</sub>
 </p>
